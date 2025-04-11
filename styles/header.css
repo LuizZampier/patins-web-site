@@ -1,0 +1,30 @@
+header nav {
+  justify-content: space-between;
+
+  padding-block: 2rem;
+}
+
+header nav img {
+  transition: all ease 500ms;
+}
+
+header nav div {
+  position: relative;
+  padding: .8rem;
+}
+
+header nav div span {
+  font: var(--punchase-number);
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  right: 0;
+
+  padding: .1rem .6rem;
+  border-radius: 50%;
+  background-color: var(--snitap-sun);
+}
+
+header img[src*="bag"]:hover {
+  transform: rotate(-20deg);
+}

@@ -1,0 +1,61 @@
+#slide-pattins {
+  position: relative;
+  width: 70.2rem;
+  height: 70.2rem;
+}
+
+#slide-pattins img {
+  position: absolute;
+}
+
+#slide-pattins img[src*="Ellipse"] {
+  width: 100%;
+  padding: 1.3rem;
+  z-index: -1;
+  animation: slideLeft 3s;
+}
+
+#slide-pattins img[src*="patins"] {
+  width: 100%;
+  z-index: 1;
+  animation: slideLeft 2.5s;
+}
+
+#slide-pattins img[src*="Stars 1"] {
+  left: 0;
+  top: 14rem;
+  animation: slideLeft 2.7s;
+}
+
+#slide-pattins img[src*="Stars 2"] {
+  right: 0;
+  bottom: 16rem;
+
+  animation: slideLeft 2.7s;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200rem);
+  }
+
+  50% {
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (width < 1280px) {
+  #slide-pattins {
+    position: relative;
+    width: 31.2rem;
+    height: 31.2rem;
+  }
+
+  #slide-pattins img[src*="Ellipse"] {
+    padding: .8rem;
+  }
+}

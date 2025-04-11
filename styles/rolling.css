@@ -1,0 +1,39 @@
+#rolling {
+  margin-block: 4rem;
+  width: 100%;
+  background-color: var(--snitap-joy-mid);
+}
+
+#scroller {
+  padding-block: 1.6rem;
+  animation: scroller 2s infinite linear;
+}
+
+#scroller div span {
+  font: var(--scroller);
+}
+
+.bg-gradient-animate {
+  background: linear-gradient(
+    45deg,
+    var(--snitap-sky-light),
+    var(--snitap-joy-light)
+  );
+
+  background-size: 400%;
+  background-position: 0 50%;
+
+  animation: bg-gradient 20s ease infinite;
+}
+
+@keyframes bg-gradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes scroller {
+  to {
+    transform: translateX(-132px);
+  }
+}

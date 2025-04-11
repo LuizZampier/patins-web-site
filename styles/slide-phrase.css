@@ -1,0 +1,203 @@
+@import url(buttons.css);
+
+#slide-phrase h1 span:nth-child(1),
+#slide-phrase h1 span:nth-child(4) {
+  color: var(--snitap-sky-mid);
+} 
+
+#slide-phrase h1 span:nth-child(2) {
+  color: var(--snitap-joy-mid);
+} 
+
+#slide-phrase h1 span:nth-child(3) {
+  color: var(--snitap-leaf-mid);
+} 
+
+h1 {
+  padding-bottom: 4.8rem;
+}
+
+h1 > div {
+  display: inline-block;
+  overflow: hidden;
+  height: 7.7rem;
+  width: min-content;
+
+  vertical-align: bottom;
+}
+
+h1, #slide-phrase h1 span {
+  font: var(--heading1);
+}
+
+h1 span {
+  display: block;
+  animation: slideUp 6s forwards infinite;
+  animation-delay: 3s;
+}
+
+
+@keyframes slideUp {
+  /* radical static */
+  0%, 22% {
+    transform: translateY(0);
+  }
+
+  /* divertida in */
+  23% {
+    transform: translateY(calc(-8rem + 8px));
+  }
+
+  25% {
+    transform: translateY(calc(-8rem - 8px));
+  }
+
+  27% {
+    transform: translateY(calc(-8rem + 8px));
+  }
+
+  29% {
+    transform: translateY(calc(-8rem - 6px));
+  }
+
+
+  /* divertida static */
+  33%, 55% {
+    transform: translateY(-8rem);
+  }
+
+  /* saudavel in */
+
+  57% {
+    transform: translateY(calc(-16rem + 8px));
+  }
+
+  59% {
+    transform: translateY(calc(-16rem - 8px));
+  }
+
+  61% {
+    transform: translateY(calc(-16rem + 8px));
+  }
+
+  63% {
+    transform: translateY(calc(-16rem - 6px));
+  }
+
+
+  /* saudavel static */
+
+  66%, 88% {
+    transform: translateY(-16rem);
+  }
+
+  /* radical in */
+
+  90% {
+    transform: translateY(calc(-24rem + 8px));
+  }
+
+  92% {
+    transform: translateY(calc(-24rem - 8px));
+  }
+
+  94% {
+    transform: translateY(calc(-24rem + 8px));
+  }
+
+  96% {
+    transform: translateY(calc(-24rem - 6px));
+  }
+
+  100% {
+    transform: translateY(-24rem);
+  }
+}
+
+@media (width < 1280px) {
+  h1 {
+    padding-top: 3.2rem;
+    
+  }
+
+  h1 div {
+    height: 4rem;
+  }
+
+  @keyframes slideUp {
+    /* radical static */
+    0%, 22% {
+      transform: translateY(0);
+    }
+  
+    /* divertida in */
+    23% {
+      transform: translateY(calc(-4rem + 4px));
+    }
+  
+    25% {
+      transform: translateY(calc(-4rem - 4px));
+    }
+  
+    27% {
+      transform: translateY(calc(-4rem + 4px));
+    }
+  
+    29% {
+      transform: translateY(calc(-4rem - 3px));
+    }
+  
+  
+    /* divertida static */
+    33%, 55% {
+      transform: translateY(-4rem);
+    }
+  
+    /* saudavel in */
+  
+    57% {
+      transform: translateY(calc(-8rem + 4px));
+    }
+  
+    59% {
+      transform: translateY(calc(-8rem - 4px));
+    }
+  
+    61% {
+      transform: translateY(calc(-8rem + 4px));
+    }
+  
+    63% {
+      transform: translateY(calc(-8rem - 3px));
+    }
+  
+  
+    /* saudavel static */
+  
+    66%, 88% {
+      transform: translateY(-8rem);
+    }
+  
+    /* radical in */
+  
+    90% {
+      transform: translateY(calc(-12rem + 4px));
+    }
+  
+    92% {
+      transform: translateY(calc(-12rem - 4px));
+    }
+  
+    94% {
+      transform: translateY(calc(-12rem + 4px));
+    }
+  
+    96% {
+      transform: translateY(calc(-12rem - 3px));
+    }
+  
+    100% {
+      transform: translateY(-12rem);
+    }
+  }
+}

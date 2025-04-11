@@ -1,0 +1,11 @@
+#pattins-apresentation {
+  padding-block: 4rem;
+  justify-content: space-evenly;
+}
+
+@media (width < 1280px) {
+  #pattins-apresentation {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}

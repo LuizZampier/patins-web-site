@@ -1,0 +1,61 @@
+:root {
+  font-size: 62.5%;
+
+  /* Colors */
+  /* Mark */
+  --snitap-sun: #FFCD1E;
+  --snitap-sky-mid: #06B6D4;
+  --snitap-sky-light: #67E8F9;
+  --snitap-joy-mid: #DB2777;
+  --snitap-joy-light: #F472B6;
+  --snitap-leaf-mid: #16A34A;
+
+  /* Base */
+  --text: #000000;
+  --highlights: #000000;
+  --background: #FAFAFA;
+
+  /* Fonts */
+  --fw-bold: 700;
+  --fw-medium: 500;
+
+  --ff-syne: 'Syne', sans-serif;
+  --heading1: var(--fw-bold) 6.4rem / 125% var(--ff-syne);
+  --heading2: var(--fw-bold) 4rem / 120% var(--ff-syne);
+  --scroller: var(--fw-bold) 2rem / 120% var(--ff-syne);
+
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --button-label: var(--fw-medium) 1.6rem / 150% var(--ff-montserrat);
+  --span: var(--fw-medium) 1.4rem / 150% var(--ff-montserrat);
+
+  --ff-inter: 'Inter', sans-serif;
+  --punchase-number: var(--fw-medium) 1.2rem / 130% var(--ff-inter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+
+  background-color: var(--background);
+
+  height: 100%;
+}
+
+img[src*="Clip"] {
+  transition: all ease 500ms;
+}
+
+img[src*="Clip"]:hover {
+  transform: rotate(90deg);
+}
+
+@media (width < 1280px) {
+  :root {
+    --heading1: var(--fw-bold) 3.2rem / 125% var(--ff-syne);
+  }
+}
